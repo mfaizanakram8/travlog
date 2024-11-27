@@ -19,3 +19,30 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* .bg-log {
+  background: repeating-linear-gradient(
+    90deg,             
+    #fcdae7,            
+    #fcdae7 70px,      
+    #ffffff 50px,      
+    #ffffff  100px     
+  );
+  margin: 0;
+  padding: 0;
+  height: auto;        
+} */
+@keyframes move-cards {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.animate-cards {
+  display: flex;
+  gap: 1rem;
+  animation: move-cards 15s linear infinite;
+}
